@@ -56,10 +56,45 @@ int main(int argc, char const *argv[]) {
   }
 
   cout << endl;
-  int pos1,pos2,pos3,pos4;
+  int pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8;
+  guerra i1,d1,f1,t1;
+  guerra i2,d2,f2,t2;
   cout << "Ingresando a la simulacion:" << endl;
   cout << "Jugador 1 ingrese el izquierda de su peloton." << endl;
   cin >> pos1;
+  cout << "Jugador 1 ingrese el derecha de su peloton." << endl;
+  cin >> pos2;
+  cout << "Jugador 1 ingrese el frontal de su peloton." << endl;
+  cin >> pos3;
+  cout << "Jugador 1 ingrese el trasera de su peloton." << endl;
+  cin >> pos4;
+  cout << "Jugador 2 ingrese el izquierda de su peloton." << endl;
+  cin >> pos5;
+  cout << "Jugador 2 ingrese el derecha de su peloton." << endl;
+  cin >> pos6;
+  cout << "Jugador 2 ingrese el frontal de su peloton." << endl;
+  cin >> pos7;
+  cout << "Jugador 2 ingrese el trasera de su peloton." << endl;
+  cin >> pos8;
 
+  cout << "Empieza: " << endl;
+  bool gane = false;
+  while (gane = false) {
+    turno = 1;
+    if (turno = 1) {
+      int jugada1;
+      cout << "Jugador a donde desea atacar?" << endl;
+      cin >> jugada1;
+      if (jugada1 == 1 && pos1 != -1) {
+
+      }else if (jugada1 == 2 && pos2 != -1) {
+
+      }else if (jugada1 == 3 && pos3 != -1) {
+
+      }else if (jugada1 == 4 && pos4 != -1) {
+        
+      }
+    }
+  }
   return 0;
 }
