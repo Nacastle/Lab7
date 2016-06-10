@@ -7,9 +7,8 @@ class Soldado{
   string ciudad;
   int edad;
 public:
-	Soldado(nombre, ciudad, edad);
-	virtual ~Soldado();
-	string toString()const;
-  virtual double Ataque;
-  virtual double Defensa;
+	Soldado(string, string, int);
+	virtual string toString();
+  virtual double Ataque()const;
+  virtual double Defensa()const;
 };
