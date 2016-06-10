@@ -2,7 +2,7 @@
 #include <string>
 using std::string;
 
-class Coraza{
+class Coraza: public Soldado{
   int dureza;
   int lanza;
 public:

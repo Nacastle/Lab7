@@ -2,7 +2,7 @@
 #include <string>
 using std::string;
 
-class Asesino{
+class Asesino: public Soldado{
   int asesinatos;
   int desapercibido;
 public:

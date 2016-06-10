@@ -3,7 +3,7 @@
 #include "soldado.h"
 using std::string;
 
-class Arquero{
+class Arquero: public Soldado{
   int flechas;
   int precision;
 public:
