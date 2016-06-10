@@ -1,5 +1,5 @@
 #include "soldado.h"
-#include "Arquero.h"
+#include "arquero.h"
 #include <sstream>
 #include <string>
 #include <iostream>
@@ -8,8 +8,7 @@ using std::endl;
 using std::string;
 using std::stringstream;
 
-Arquero::Arquero(string nombre, string ciudad, int edad, double flechas, double precision){
-  Soldado(nombre,ciudad,edad);
+Arquero::Arquero(string nombre, string ciudad, int edad, double flechas, double precision):Soldado(nombre,ciudad,edad){
   this->flechas = flechas;
   this->precision = precision;
 }

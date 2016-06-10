@@ -1,5 +1,5 @@
 #include "soldado.h"
-#include "coraza.h"
+#include "asesinos.h"
 #include <sstream>
 #include <string>
 #include <iostream>
@@ -8,8 +8,7 @@ using std::endl;
 using std::string;
 using std::stringstream;
 
-Asesino::Asesino(string nombre, string ciudad, int edad, double asesinatos, double desapercibido){
-  Soldado(nombre,ciudad,edad);
+Asesino::Asesino(string nombre, string ciudad, int edad, double asesinatos, double desapercibido):Soldado(nombre,ciudad,edad){
   this->asesinatos = asesinatos;
   this->desapercibido = desapercibido;
 }

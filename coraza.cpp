@@ -8,8 +8,7 @@ using std::endl;
 using std::string;
 using std::stringstream;
 
-Coraza::Coraza(string nombre, string ciudad, int edad, double dureza, double lanza){
-  Soldado(nombre,ciudad,edad);
+Coraza::Coraza(string nombre, string ciudad, int edad, double dureza, double lanza):Soldado(nombre,ciudad,edad){
   this->dureza = dureza;
   this->lanza = lanza;
 }
@@ -22,7 +21,7 @@ double Coraza::getLanzas()const{
 }
 
 double Coraza::Ataque()const{
-  return lanzas;
+  return lanza;
 }
 
 double Coraza::Defensa()const{
@@ -31,6 +30,6 @@ double Coraza::Defensa()const{
 
 string Coraza::toString()const{
   stringstream ss;
-  ss << "Coraza: " << "Lanzas: " << Lanzas << "dureza" << dureza;
+  ss << "Coraza: " << "Lanzas: " << lanza << "dureza" << dureza;
   return ss.str();
 }
